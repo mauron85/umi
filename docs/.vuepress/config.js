@@ -61,6 +61,7 @@ module.exports = {
                 'with-dva',
                 'load-on-demand',
                 'runtime-config',
+                'ssr',
                 'block',
                 'deploy',
               ],
