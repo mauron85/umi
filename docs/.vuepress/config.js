@@ -1,5 +1,10 @@
 module.exports = {
   title: 'UmiJS',
+  markdown: {
+    config: md => {
+      md.use(require('../../website/node_modules/markdown-it-plantuml'));
+    },
+  },
   locales: {
     '/': {
       lang: 'en-US',
@@ -62,6 +67,7 @@ module.exports = {
                 'load-on-demand',
                 'runtime-config',
                 'ssr',
+                'pre-render',
                 'block',
                 'deploy',
               ],
@@ -131,6 +137,8 @@ module.exports = {
                 'with-dva',
                 'load-on-demand',
                 'runtime-config',
+                'ssr',
+                'pre-render',
                 'block',
                 'deploy',
               ],
